@@ -1,22 +1,22 @@
 def encrypt(message):
-    ceaserMessage = ''
+    caeserMessage = ''
     for i in range(0, len(message)):
         asciiVal = ord(message[i])
         if(asciiVal > 64):
-            ceaserMessage += chr(asciiVal+3)
-    print("This is the encoded message -> " + ceaserMessage)
+            caeserMessage += chr(asciiVal+3)
+    print("This is the encoded message -> " + caeserMessage)
 
 def decrypt(message):
-    ceaserDecrypt = ''
+    caeserDecrypt = ''
     for i in range(0, len(message)):
         asciiVal = ord(message[i])
         if(asciiVal > 64):
-            ceaserDecrypt += chr(asciiVal-3)
-    print("This is the decoded message -> " + ceaserDecrypt)
+            caeserDecrypt += chr(asciiVal-3)
+    print("This is the decoded message -> " + caeserDecrypt)
 
 def main():
     while(1):
-        print("Welcome to the ceaser cipher encoder!")
+        print("Welcome to the caeser cipher encoder!")
         choice = input("Do you want to encrypt or decrypt?")
         if(choice == 'encrypt'):
             message = input("Please enter the message you wish to be encoded ")
